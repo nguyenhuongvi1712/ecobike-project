@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane dividerPositions="0.21577380952380953" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="674.0" prefWidth="1038.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+            <children>
+                <ImageView fx:id="homeLogo" fitHeight="94.0" fitWidth="154.0" layoutX="37.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/eco-logo.jpg" />
+                    </image>
+                </ImageView>
+                <Label layoutX="19.0" layoutY="120.0" text="ECO BIKE RENTAL" textFill="#4dcd77">
+                    <font>
+                        <Font name="System Bold" size="13.0" />
+                    </font>
+                </Label>
+                <TextField layoutX="207.0" layoutY="48.0" prefHeight="46.0" prefWidth="602.0" style="-fx-background-color: #dde8e8;" text="Search ">
+                    <opaqueInsets>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                    </opaqueInsets>
+                </TextField>
+                <Button layoutX="892.0" layoutY="43.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="76.0" style="-fx-background-color: #4dcd77;" text="Search" />
+            </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="76.0" prefWidth="1036.0" style="-fx-background-color: #ffffff;">
+            <children>
+                <GridPane alignment="CENTER" prefHeight="524.0" prefWidth="1036.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="508.0" minWidth="10.0" prefWidth="424.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="614.0" minWidth="10.0" prefWidth="612.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <ImageView fitHeight="454.0" fitWidth="389.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/b1-bike.jpeg" />
+                            </image>
+                            <GridPane.margin>
+                                <Insets left="20.0" />
+                            </GridPane.margin>
+                        </ImageView>
+                  <Pane fx:id="time" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                     <children>
+                        <Label fx:id="bikeId" layoutX="236.0" layoutY="22.0" text="Your Bike">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="64.0" layoutY="83.0" text="Type : ">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="64.0" layoutY="163.0" text="License plate : ">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="64.0" layoutY="252.0" text="Deposit :">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="returnBikeBtn" layoutX="472.0" layoutY="468.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="114.0" style="-fx-background-color: #4dcd77;" text="Return bike" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Line endX="-100.0" endY="504.0" layoutX="115.0" layoutY="7.0" startX="-100.0" />
+                        <Label layoutX="64.0" layoutY="209.0" text="Barcode : ">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="batteryLabel" layoutX="64.0" layoutY="294.0" text="Battery percentage :  ">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="64.0" layoutY="125.0" text="Rent Dock : ">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="remainingTimeLabel" layoutX="62.0" layoutY="336.0" text="Remaining time :  ">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="type" layoutX="366.0" layoutY="85.0" prefHeight="16.0" prefWidth="150.0" text="Label" />
+                        <Label fx:id="dockName" layoutX="366.0" layoutY="127.0" prefHeight="16.0" prefWidth="150.0" text="Label" wrapText="true" />
+                        <Label fx:id="licensePlate" layoutX="366.0" layoutY="165.0" prefHeight="16.0" prefWidth="150.0" text="Label" />
+                        <Label fx:id="barcode" layoutX="366.0" layoutY="211.0" prefHeight="16.0" prefWidth="150.0" text="Label" />
+                        <Label fx:id="deposit" layoutX="366.0" layoutY="251.0" prefHeight="16.0" prefWidth="150.0" text="Label" />
+                        <Label fx:id="battery" layoutX="366.0" layoutY="296.0" prefHeight="16.0" prefWidth="150.0" text="Label" />
+                        <Label fx:id="remainingTime" layoutX="366.0" layoutY="338.0" prefHeight="16.0" prefWidth="150.0" text="Label" />
+                        <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="64.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/clock-icon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="pauseBtn" fitHeight="36.0" fitWidth="36.0" layoutX="270.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/pause-icon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="366.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/cost-icon.png" />
+                           </image>
+                        </ImageView>
+                        <Line endX="467.0" layoutX="133.0" layoutY="373.0" startX="-100.0" stroke="#08d026" />
+                        <Text fx:id="timeCount" layoutX="119.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="130.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="amountCount" fill="#da0909" layoutX="441.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="162.3779296875">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+                    </children>
+                </GridPane>
+            </children>
+        </AnchorPane>
+    </items>
+</SplitPane>

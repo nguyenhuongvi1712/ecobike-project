@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <AnchorPane prefHeight="380.0" prefWidth="839.0">
+            <children>
+                <ImageView fitHeight="326.0" fitWidth="386.0" layoutX="28.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/eco-logo.jpg" />
+                    </image>
+                </ImageView>
+                <Label layoutX="390.0" layoutY="136.0" prefHeight="109.0" prefWidth="144.0" text="ECO BIKE RENTAL" textAlignment="CENTER" textFill="#269720db">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="690.0" prefWidth="1007.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <items>
+      <AnchorPane prefHeight="380.0" prefWidth="839.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="440.0" fitWidth="602.0" layoutX="289.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/eco-logo.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="365.0" layoutY="601.0" prefHeight="80.0" prefWidth="306.0" text="ECO BIKE RENTAL" textAlignment="CENTER" textFill="#269720db">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="443.0" layoutY="464.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/loading.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </items>
+</SplitPane>
